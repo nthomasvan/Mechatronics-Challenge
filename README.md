@@ -1,9 +1,9 @@
 # Mechatronics Challenge
 
-##Electrical
+## Electrical
 
-##Coding
+## Coding
 
-##Mechanical
+## Mechanical
 
 
