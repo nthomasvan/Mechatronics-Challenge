@@ -8,7 +8,7 @@ The wiring schematic of the challenge was drawn using the Fritzing program. The 
 <p align ="center"><b>Figure 1 </b> - Wiring Breadboard View </p>
 
 ![Schematic View](electrical/Schematic/Mechatronics-Challenge_schem.jpg)
-<p align ="center"><b>Figure 1 </b> - Wiring Schematic View</p>
+<p align ="center"><b>Figure 2 </b> - Wiring Schematic View</p>
 
 <b>GPS Connections</b>
 
@@ -22,7 +22,7 @@ The pin connections for the GPS module can be found in the table below (Refer to
 The pin connections for the accelerometer sensor can be found in the table below (Refer to Table 2). The LIS3DH library and datasheet heavily influenced many of the pin choices.  The accelerometer sensor, like the GPS module, uses a 3.0V power supply, thus utilizes the same Vin to 3V3 pin connection between the Carloop GPS Photon Shield and Particle Photon microcontroller, respectively.  The SPI interface was utilized in this pin set up. The ACCEL_CS (chip select) pin of the shield is connected to the A2 pin of the Particle Photon in order to set it to LOW state for the SPI interface. By default, the pin is set to HIGH, which is the I2C interface set up. The SPI MOSI (Master Out Slave In) pin is connected to the A5 pin in order to allow data to be sent from the microcontroller to the sensor. The SPI MISO (Master In Slave Out) pin sends data from the sensor to the processor through the A4 pin. Lastly, The SPI CLK pin is connected to the A3 pin of the microcontroller
 
 ![Accelerometer Table](electrical/Accel_PinConnect.JPG)
-<p align ="center"><b>Table 1 </b> - GPS Pin Connections</p>
+<p align ="center"><b>Table 2 </b> - GPS Pin Connections</p>
 
 
 ## Coding
@@ -35,7 +35,10 @@ Carloop Library: https://github.com/carloop/carloop-library
 
 ## Mechanical
 
-All drawings for the enclosure can be found [here](https://github.com/nthomasvan/Mechatronics-Challenge/tree/Mechatronics-Challenge/mechanical/Engineering_Drawings). The overall design was centered around the Carloop adapter with the Particle Photon and Carloop GPS module connected. There are two openings in the enclosure for the OBD-II connector and the USB Micro B connector. The opening for the USB connector allows for easy access for typical operations such as code changes, debugging, etc. Likewise, the opening for the OBD-II connector is meant for the direct connection between the module to a system such as test benches, vehicles, etc . The enclosure itself was also designed to be a snug fit to minimize the shifting of the components within the box. Lastly, the top cover is fastened onto the base enclosure using four allen bolts for quick entry in the event that any of the modules will need to be replaced. For further design improvements, the enclosure could be modified with fasteners within the box to secure the components directly to the container to prevent any movements even further. In addition, note that the dimensions for the parts are rough estimates due to the inability to find dimensions for all parts.
+All drawings for the enclosure can be found [here](https://github.com/nthomasvan/Mechatronics-Challenge/tree/Mechatronics-Challenge/mechanical/Engineering_Drawings). The overall design was centered around the Carloop adapter with the Particle Photon and Carloop GPS module connected. There are two openings in the enclosure for the OBD-II connector and the USB Micro B connector. The opening for the USB connector allows for easy access for typical operations such as code changes, debugging, etc. Likewise, the opening for the OBD-II connector is meant for the direct connection between the module to a system such as test benches, vehicles, etc . The enclosure itself was also designed to be a snug fit to minimize the shifting of the components within the box. Lastly, the top cover is fastened onto the base enclosure using four allen bolts for quick entry in the event that any of the modules will need to be replaced. 
+
+For future design improvements, the enclosure could be modified with fasteners/snap-hook fixtures within the box to secure the components directly to the container to prevent any movements even further. In addition, progressing to a snap-fit assembly design would reduce the amount of loose parts and increase the speed of accessibility to the components.
+
 
 ![Assembly_GIF](mechanical/Assembly_Explode.gif)
 
